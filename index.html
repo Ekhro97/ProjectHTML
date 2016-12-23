@@ -2,14 +2,18 @@
 <html>
     <head>  
         <title>W3CSS Framework Demo</title>
-        <link rel="stylesheet" href="../css.css">
+        <link rel="stylesheet" href="css/css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script src="javascript/js.js"></script>
     </head>
   <body>
 <!-- Header / Home-->
 <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-text-white w3-center">
-    <h1 class="w3-jumbo bgimg">W3CSS Framework</h1>
-    <h2 class="bgimg">Joel Coll i Sergi Romeu</h2>
+  <div class="w3-display-middle w3-center">
+    <h1 class="w3-jumbo bgimg w3-text-shadow" id="Inici">W3.CSS Framework</h1>
+    <h2 class="bgimg w3-opacity w3-text-shadow w3-center">Joel Coll i Sergi Romeu</h2>
+
  
   </div>
 </header>
@@ -17,11 +21,31 @@
 <!-- Navbar (sticky bottom) -->
 <div class="w3-bottom w3-hide-small">
   <ul class="w3-navbar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
-    <li style="width:25%"><a href="" class="w3-margin-left w3-round">Inici</a></li>
-    <li style="width:25%"><a href="" class="w3-round">Què és?</a></li>
-    <li style="width:25%"><a href="" class="w3-round">Exemples</a></li>
-    <li style="width:25%"><a href="http://www.w3schools.com/w3css/w3css_downloads.asp" class="w3-margin-right w3-round w3-hover-black">Pàgina Oficial</a></li>
+    <li style="width:25%"><a href="#Inici" class="w3-margin-left w3-round">Inici</a></li>
+    <li style="width:25%"><a href="#quees" class="w3-round">Què és?</a></li>
+    <li style="width:25%"><a href="" class="w3-round">Tutorials</a></li>
+    <li style="width:25%"><a href="http://www.w3schools.com/w3css" class="w3-margin-right w3-round w3-hover-black">Pàgina Oficial</a></li>
   </ul>
+</div>
+      
+      <!-- About / Jane And John -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey" id="quees"><b>Què és?</b></h1>
+    <img class=" w3-opacityw3-round w3-grayscale-min" src="img/w3css-mini-logo.jpg" style="width:100%;margin:32px 0"></img>
+    <h2>Què és W3.CSS</h2>
+      <p> W3.CSS es un framework de css modern amb caracter <i>"responsive"</i></p>
+        <ul class="w3-leftbar w3-theme-border w3-padding-12" style="list-style:none">
+            <li>Més petit i rapid que altres frameworks.</li>
+            <li>Mes facil de aprendre, i mes facil d'utilitzar que altres frameworks.</li>
+            <li>Nomes utilitza css estandar (No jQuery o llibreries de JavaScript).</li>
+            <li>Augmenta la velocitat i simplifica el desenvolupament web. </li>
+            <li>Soporta les noves tecniques <i>"responsive"</i> (telefons movils com a prioritat) per defecte.</li>
+            <li>Proporciona igualtat de css per a tots els navegadors. Chrome, Firefox, IE, Safari, i més</li>
+            <li>Proporciona igualtat per a tots els dispositius. PC, portatils, tablets, i movils:</li>
+        </ul>
+    <p class="w3-center"><a href="#" class="w3-btn w3-round w3-padding-large w3-large">Tutorials</a></p>
+  </div>
 </div>
 
 </html>
