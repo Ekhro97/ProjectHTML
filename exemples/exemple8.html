@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+        <title>W3CSS Progress Bar Demo</title>
+        <link rel="stylesheet" href="../css/css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script src="../javascript/js.js"></script>
+    </head>
+  <body>
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <h1 class="w3-jumbo bgimg w3-text-shadow">W3.CSS Framework</h1>
+    <h2 class="bgimg w3-opacity w3-text-shadow w3-center">Joel Coll i Sergi Romeu</h2>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+    <nav id="nav">
+        <ul class="w3-navbar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
+            <li style="width:25%"><a href="../index.html" class="w3-margin-left w3-round">Inici</a></li>
+            <li style="width:25%"><a href="#sample" class="w3-round">Què és?</a></li>
+            <li style="width:25%"><a href="#Start" class="w3-round">Tutorials</a></li>
+            <li style="width:25%"><a href="http://www.w3schools.com/w3css" class="w3-margin-right w3-round w3-hover-black">Pàgina Oficial</a></li>
+        </ul>
+    </nav>
+</div>
+
+      <!-- Contingut -->
+<div class=" w3-row w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey" id="sample"><b>W3.CSS Progress Bar</b></h1>
+    <h2>Què podem fer amb les Progress Bar?</h2>
+      <ul class="w3-leftbar w3-theme-border w3-padding-12">
+        <li>Crear barres de progrès per diferents objectes.</li>
+        <li>Modificar el color i estil de les barres.</li>
+      </ul>
+      <br/>
+      <div class="w3-container">
+        <h2>Barres bàsiques</h2>
+          <p>Simplement incorporem un w3-progressbar al div dins d'un div amb w3-progress-container.</p>
+          <div class="w3-progress-container">
+    <div class="w3-progressbar w3-red" style="width:85%"></div>
+  </div>
+        <h2>Barres de progrès de colors i rodones</h2>
+          <p>Simplement incorporem un w3-round al div, per el color sel·leccionem el w3-"color" que volguem.</p>
+          <div class="w3-progress-container">
+    <div class="w3-progressbar w3-blue w3-round" style="width:29%"></div>
+  </div>
+        <h2>Barres de progrès dinàmiques</h2>
+          <p>Hem d'afegir un script de JS, pero nomès hem de tocar el width del div, on el fiquem a 1%.</p>
+          <div class="w3-progress-container">
+    <div id="myBar2" class="w3-progressbar w3-purple" style="width:1%"></div>
+  </div>
+  <br>
+
+  <button class="w3-btn w3-dark-grey" onclick="move()">Fes click</button> 
+
+
+<script>
+function move() {
+  var elemt = document.getElementById("myBar2");   
+  var width = 1;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elemt.style.width = width + '%'; 
+    }
+  }
+}
+</script>
+  
+      
+      
+      
+      <h2>Barres de progrès dinàmiques i amb nombres</h2>
+      <p>Amb aquesta propietat, la barra esta linkada al text, en aquest cas un 9%</p>
+  <div class="w3-progress-container">
+    <div id="myBar1" class="w3-progressbar w3-green" style="width:9%">
+      <div id="demo1" class="w3-center w3-text-white">9%</div>
+    </div>
+  </div>
+  <br>
+
+  <button class="w3-btn w3-dark-grey" onclick="move2()">Fes click</button> 
+</div>
+</div>
+<script>
+function move2() {
+  var elem = document.getElementById("myBar1");   
+  var width = 9;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("demo1").innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+      
+</div>
+      </div>
+  </div>
+</div>
+
+    <!-- Tutorials -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+    <div class="w3-content">
+    <h1 class="w3-text-grey"><b>ALTRES<br/>TUTORIALS</b></h1>
+    <img id="Start" class="w3-round-large" src="../img/Get-Started2.png" style="width:100%;margin:64px 0">
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h2><b>Fonts</b></h2>
+            <a href="exemple1.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Code</b></h2>
+            <a href="exemple2.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Tags</b></h2>
+            <a href="exemple3.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Animations</b></h2>
+            <a href="exemple4.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Effects</b></h2>
+            <a href="exemple5.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+            <div class="w3-third">
+            <h2><b>Dropdowns</b></h2>
+            <a href="exemple6.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+            <div class="w3-third">
+            <h2><b>Tabs</b></h2>
+            <a href="exemple7.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+            <div class="w3-third">
+            <h2><b>Progress Bar</b></h2>
+            <a href="exemple8.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Alerts</b></h2>
+            <a href="exemple9.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
