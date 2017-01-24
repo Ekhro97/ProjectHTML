@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+        <title>W3CSS Taules de navegació Demo</title>
+        <link rel="stylesheet" href="../css/css.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script src="../javascript/js.js"></script>
+    </head>
+  <body>
+<!-- Header / Home-->
+<header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center">
+    <h1 class="w3-jumbo bgimg w3-text-shadow">W3.CSS Framework</h1>
+    <h2 class="bgimg w3-opacity w3-text-shadow w3-center">Joel Coll i Sergi Romeu</h2>
+  </div>
+</header>
+
+<!-- Navbar (sticky bottom) -->
+<div class="w3-bottom w3-hide-small">
+    <nav id="nav">
+        <ul class="w3-navbar w3-white w3-center w3-padding-8 w3-opacity-min w3-hover-opacity-off">
+            <li style="width:25%"><a href="../index.html" class="w3-margin-left w3-round">Inici</a></li>
+            <li style="width:25%"><a href="#sample" class="w3-round">Què és?</a></li>
+            <li style="width:25%"><a href="#Start" class="w3-round">Tutorials</a></li>
+            <li style="width:25%"><a href="http://www.w3schools.com/w3css" class="w3-margin-right w3-round w3-hover-black">Pàgina Oficial</a></li>
+        </ul>
+    </nav>
+</div>
+
+      <!-- Contingut -->
+<div class=" w3-row w3-container w3-padding-64 w3-pale-red w3-grayscale-min" id="us">
+  <div class="w3-content">
+    <h1 class="w3-center w3-text-grey" id="sample"><b>W3.CSS Taules de navegació</b></h1>
+    <h2>Què podem fer amb les taules de navegació?</h2>
+    <p>Les taules de navegació son una manera de navegar per la web utilitzant taules i javascript</p>
+    <div class="w3-example">
+        <ul class="w3-navbar w3-grey w3-opacity">
+          <li><a href="javascript:void(0)" onclick="openCity('London')">London</a></li>
+          <li><a href="javascript:void(0)" onclick="openCity('Paris')">Paris</a></li>
+          <li><a href="javascript:void(0)" onclick="openCity('Tokyo')">Tokyo</a></li>
+        </ul>
+          <div id="London" class="city">
+          <h2>Londres</h2>
+          <p>Londres es la capital de Anglaterra.</p>
+        </div>
+        <div id="Paris" class="city" style="display:none">
+          <h2>Paris</h2>
+          <p>Paris es la capital de França.</p> 
+        </div>
+        <div id="Tokyo" class="city" style="display:none">
+          <h2>Tokyo</h2>
+          <p>Tokyo es la capital de Japó.</p>
+        </div>
+    </div>
+    <div class="w3-example">
+    <h3>Exemple</h3>
+        <div class="w3-code notranslate htmlHigh">
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>ul<span style="color:red"> class<span style="color:mediumblue">="w3-navbar"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="javascript:void(0)"</span> onclick<span style="color:mediumblue">="openCity('London')"</span></span><span style="color:mediumblue">&gt;</span></span>London<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>
+            &nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="javascript:void(0)"</span> onclick<span style="color:mediumblue">="openCity('Paris')"</span></span><span style="color:mediumblue">&gt;</span></span>Paris<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>li<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="javascript:void(0)"</span> onclick<span style="color:mediumblue">="openCity('Tokyo')"</span></span><span style="color:mediumblue">&gt;</span></span>Tokyo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><span style="color:brown"><span style="color:mediumblue">&lt;</span>/li<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/ul<span style="color:mediumblue">&gt;</span></span>
+            <br/><br/>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> id<span style="color:mediumblue">="London"</span> class<span style="color:mediumblue">="city"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>London<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>London is the capital 
+            of England.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br>
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> id<span style="color:mediumblue">="Paris"</span> class<span style="color:mediumblue">="city"</span> style<span style="color:mediumblue">="display:none"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Paris<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span>
+            <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> 
+            id<span style="color:mediumblue">="Tokyo"</span> class<span style="color:mediumblue">="city"</span> style<span style="color:mediumblue">="display:none"</span></span><span style="color:mediumblue">&gt;</span></span><br>
+            &nbsp;
+            <span style="color:brown"><span style="color:mediumblue">&lt;</span>h2<span style="color:mediumblue">&gt;</span></span>Tokyo<span style="color:brown"><span style="color:mediumblue">&lt;</span>/h2<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>p<span style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span style="color:brown"><span style="color:mediumblue">&lt;</span>/p<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br>
+        </div>
+    </div>
+        <div class="w3-example">
+            <h3>I aqui el javascript</h3>
+            <div class="w3-code notranslate jsHigh"><span style="color:black"><span style="color:red">
+            </span>  <span style="color:mediumblue">function</span> openCity(cityName) {<br>&nbsp;&nbsp;&nbsp; <span style="color:red">
+            </span> <span style="color:mediumblue">var</span> i;<br>&nbsp;&nbsp;&nbsp; <span style="color:mediumblue">var</span> x = document.<span style="color:black">getElementsByClassName</span>(<span style="color:brown">"city"</span>);<br>&nbsp;&nbsp;&nbsp; <span style="color:red">
+            </span> <span style="color:mediumblue">for</span> (i = <span style="color:red">0</span>; i &lt; x.<span style="color:black">length</span>; i++) {<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:red">
+            </span> x[i].<span style="color:black">style</span>.<span style="color:black">display</span> = <span style="color:brown">"none"</span>; <br>&nbsp;&nbsp;&nbsp; }<br>&nbsp;&nbsp;&nbsp; <span style="color:red">
+            </span> document.<span style="color:black">getElementById</span>(cityName).<span style="color:black">style</span>.<span style="color:black">display</span> = <span style="color:brown">"block"</span>; <br>}<br>
+            </span></div>
+        </div>
+    <h2>Taula Vertical</h2>
+    <p>Aqui teniu un exemple de com fer una galeria de imatges</p>
+      <div class="w3-container">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<div class="w3-row">
+  <div class="w3-col s3 w3-container">
+      <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+        <img src="../img/harambe.jpg" alt="Nature" style="width:100%">
+      </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Fjords');">
+          <img src="../img/harambeE.jpg" alt="Fjords" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+          <img src="../img/harambeG1.jpg" alt="Mountains" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+          <img src="../img/harambeG2.jpg" alt="Lights" style="width:100%">
+        </a>
+      </div>
+    </div><br>
+
+    <div id="Nature" class="picture w3-display-container" style="display:none">
+      <img src="../img/harambe.jpg" alt="Nature" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">RIP Harambe</div>
+    </div>
+
+    <div id="Fjords" class="picture w3-display-container" style="display:none">
+      <img src="../img/harambeE.jpg" alt="Fjords" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Harambe in Heaven</div>
+    </div>
+
+    <div id="Mountains" class="picture w3-display-container" style="display:none">
+      <img src="../img/harambeG1.jpg" alt="Mountains" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Savage Harambe</div>
+    </div>
+
+    <div id="Lights" class="picture w3-display-container" style="display:none">
+      <img src="../img/harambeG2.jpg" alt="Lights" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Our Lord</div>
+    </div>
+      <div class="w3-example">
+        <h3>Exemple</h3>
+        <div class="w3-code notranslate htmlHigh">
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="javascript:void(0)"</span> class<span style="color:mediumblue">="w3-hover-opacity"</span> onclick<span style="color:mediumblue">="openImg('Nature');"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_nature.jpg"</span> alt<span style="color:mediumblue">="Nature"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><br>
+        <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> id<span style="color:mediumblue">="Nature"</span> class<span style="color:mediumblue">="picture w3-display-container"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> 
+        src<span style="color:mediumblue">="img_nature_wide.jpg"</span> alt<span style="color:mediumblue">="Nature"</span> style<span style="color:mediumblue">="width:100%"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>span<span style="color:red"> onclick<span style="color:mediumblue">="this.parentElement.style.display='none'"</span> 
+        class<span style="color:mediumblue">="w3-display-topright"</span></span><span style="color:mediumblue">&gt;</span></span>&amp;times;<span style="color:brown"><span style="color:mediumblue">&lt;</span>/span<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> 
+        class<span style="color:mediumblue">="w3-display-bottomleft w3-container"</span></span><span style="color:mediumblue">&gt;</span></span>Nature<span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span></div>
+        </div>
+    </div>
+</div>  
+    <!-- Tutorials -->
+<div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+    <div class="w3-content">
+    <h1 class="w3-text-grey"><b>ALTRES<br/>TUTORIALS</b></h1>
+    <img id="Start" class="w3-round-large" src="../img/Get-Started2.png" style="width:100%;margin:64px 0">
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h2><b>Fonts</b></h2>
+            <a href="exemple1.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Code</b></h2>
+            <a href="exemple2.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Tags</b></h2>
+            <a href="exemple3.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Animations</b></h2>
+            <a href="exemple4.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Effects</b></h2>
+            <a href="exemple5.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+            <div class="w3-third">
+            <h2><b>Dropdowns</b></h2>
+            <a href="exemple6.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+            <div class="w3-third">
+            <h2><b>Tabs</b></h2>
+            <a href="exemple7.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+            <div class="w3-third">
+            <h2><b>Progress Bar</b></h2>
+            <a href="exemple8.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+        </div>
+        <div class="w3-third">
+            <h2><b>Alerts</b></h2>
+            <a href="exemple9.html"><div class="w3-card-12">
+                <img class="w3-round-large" src="../img/sample.jpg" style="width:100%">
+                <p>desc</p>
+            </a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
