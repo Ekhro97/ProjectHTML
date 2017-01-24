@@ -79,6 +79,74 @@
             </span> document.<span style="color:black">getElementById</span>(cityName).<span style="color:black">style</span>.<span style="color:black">display</span> = <span style="color:brown">"block"</span>; <br>}<br>
             </span></div>
         </div>
+    <h2>Taula Vertical</h2>
+    <p>Aqui teniu un exemple de com fer una galeria de imatges</p>
+      <div class="w3-container">
+  <h2>Tabbed Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<div class="w3-row">
+  <div class="w3-col s3 w3-container">
+      <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Nature');">
+        <img src="../img/harambe.jpg" alt="Nature" style="width:100%">
+      </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Fjords');">
+          <img src="../img/harambeE.jpg" alt="Fjords" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Mountains');">
+          <img src="../img/harambeG1.jpg" alt="Mountains" style="width:100%">
+        </a>
+      </div>
+      <div class="w3-col s3 w3-container">
+        <a href="javascript:void(0)" class="w3-hover-opacity" onclick="openImg('Lights');">
+          <img src="../img/harambeG2.jpg" alt="Lights" style="width:100%">
+        </a>
+      </div>
+    </div><br>
+
+    <div id="Nature" class="picture w3-display-container" style="display:none">
+      <img src="../img/harambe.jpg" alt="Nature" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">RIP Harambe</div>
+    </div>
+
+    <div id="Fjords" class="picture w3-display-container" style="display:none">
+      <img src="../img/harambeE.jpg" alt="Fjords" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Harambe in Heaven</div>
+    </div>
+
+    <div id="Mountains" class="picture w3-display-container" style="display:none">
+      <img src="../img/harambeG1.jpg" alt="Mountains" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Savage Harambe</div>
+    </div>
+
+    <div id="Lights" class="picture w3-display-container" style="display:none">
+      <img src="../img/harambeG2.jpg" alt="Lights" style="width:100%">
+      <span onclick="this.parentElement.style.display='none'" 
+      class="w3-display-topright w3-closebtn w3-padding-large w3-text-white">&times;</span>
+      <div class="w3-display-bottomleft w3-container w3-padding w3-text-white">Our Lord</div>
+    </div>
+      <div class="w3-example">
+        <h3>Exemple</h3>
+        <div class="w3-code notranslate htmlHigh">
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>a<span style="color:red"> href<span style="color:mediumblue">="javascript:void(0)"</span> class<span style="color:mediumblue">="w3-hover-opacity"</span> onclick<span style="color:mediumblue">="openImg('Nature');"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> src<span style="color:mediumblue">="img_nature.jpg"</span> alt<span style="color:mediumblue">="Nature"</span></span><span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/a<span style="color:mediumblue">&gt;</span></span><br>
+        <br><span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> id<span style="color:mediumblue">="Nature"</span> class<span style="color:mediumblue">="picture w3-display-container"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>img<span style="color:red"> 
+        src<span style="color:mediumblue">="img_nature_wide.jpg"</span> alt<span style="color:mediumblue">="Nature"</span> style<span style="color:mediumblue">="width:100%"</span></span><span style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>span<span style="color:red"> onclick<span style="color:mediumblue">="this.parentElement.style.display='none'"</span> 
+        class<span style="color:mediumblue">="w3-display-topright"</span></span><span style="color:mediumblue">&gt;</span></span>&amp;times;<span style="color:brown"><span style="color:mediumblue">&lt;</span>/span<span style="color:mediumblue">&gt;</span></span><br>&nbsp; <span style="color:brown"><span style="color:mediumblue">&lt;</span>div<span style="color:red"> 
+        class<span style="color:mediumblue">="w3-display-bottomleft w3-container"</span></span><span style="color:mediumblue">&gt;</span></span>Nature<span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span><br><span style="color:brown"><span style="color:mediumblue">&lt;</span>/div<span style="color:mediumblue">&gt;</span></span></div>
+        </div>
     </div>
 </div>  
     <!-- Tutorials -->
